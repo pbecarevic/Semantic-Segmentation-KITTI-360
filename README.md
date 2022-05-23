@@ -35,3 +35,37 @@ bash
 This script will look through the subfolders in order and move the images to the top level folder and number the images in order from 1 to the last image number
 
 This ensures that the order of the train/val raw images does not change so that the corresponding train/val masks are still mapped correctly
+
+### 5.
+
+We must now see how the pixel mapping for the semantic segmentation is done
+
+Label Name 	  | Label ID
+--------------|----------
+void          |    0
+road 	        |    1
+sidewalk 	    |    2
+building 	    |    3
+wall 	        |    4
+fence 	      |    5
+pole 	        |    6
+traffic light |    7
+traffic sign 	|    8
+vegetation 	  |    9
+terrain 	    |    10
+sky 	        |    11
+person 	      |    12
+rider 	      |    13
+car 	        |    14
+truck 	      |    15
+bus 	        |    16
+train 	      |    17
+motorcycle   	|    18
+bicycle 	    |    19
+garage        |    20
+
+The masks are loaded into the Dataset class as greyscale images because PyTorch's Categorical Cross Entropy Loss takes inputs in as a 4D tensor of (batch_size, num_classes, H, W) and the targets should be a 3D tensor of (batch_size, H, W).
+
+The masks are then indexed according to a class's grescale pixel value.
+
+Taking a look at the `Final_notebook.ipynb` and viewing the Dataset class, the indexing will be more clear.
