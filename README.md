@@ -64,8 +64,8 @@ motorcycle   	|    18
 bicycle 	    |    19
 garage        |    20
 
-The masks are loaded into the Dataset class as greyscale images because PyTorch's Categorical Cross Entropy Loss takes inputs in as a 4D tensor of (batch_size, num_classes, H, W) and the targets should be a 3D tensor of (batch_size, H, W).
+The masks are loaded into the Dataset class as grayscale images because PyTorch's Categorical Cross Entropy Loss takes inputs in as a 4D tensor of (batch_size, num_classes, H, W) and the targets should be a 3D tensor of (batch_size, H, W).
 
-The masks are then indexed according to a class's grescale pixel value.
+The masks are then indexed according to a class's grayscale pixel value.
 
 Taking a look at the `Final_notebook.ipynb` and viewing the Dataset class, the indexing will be more clear.
