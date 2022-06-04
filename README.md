@@ -78,3 +78,6 @@ Taking a look at the `Final_notebook.ipynb` and viewing the Dataset class, the i
 
 ### Testing
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/103152504/171974496-6e8e83ec-9f5f-4b1f-9aa9-afe12405e415.GIF)
+
+
+By: Petar Becarevic & Michael Garbus
