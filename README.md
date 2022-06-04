@@ -69,3 +69,12 @@ The masks are loaded into the Dataset class as grayscale images because PyTorch'
 The masks are then indexed according to a class's grayscale pixel value.
 
 Taking a look at the `Final_notebook.ipynb` and viewing the Dataset class, the indexing will be more clear.
+
+
+## Results
+
+### Training
+![ezgif-1-2f8913c352](https://user-images.githubusercontent.com/103152504/171974386-ae29b511-e49f-4390-b569-0a3f5d9b0d38.GIF)
+
+### Testing
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/103152504/171974496-6e8e83ec-9f5f-4b1f-9aa9-afe12405e415.GIF)
